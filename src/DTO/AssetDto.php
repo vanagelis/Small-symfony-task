@@ -13,6 +13,7 @@ class AssetDto
 
     #[Assert\Choice(choices: ['BTC', 'ETH', 'IOTA'])]
     private ?string $currency = null;
+
     #[Assert\PositiveOrZero]
     private ?float $value;
 
