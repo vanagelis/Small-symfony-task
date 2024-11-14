@@ -9,11 +9,9 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class ValidationService
 {
-    private ValidatorInterface $validator;
-
-    public function __construct(ValidatorInterface $validator)
-    {
-        $this->validator = $validator;
+    public function __construct(
+        public readonly ValidatorInterface $validator,
+    ) {
     }
 
     /**

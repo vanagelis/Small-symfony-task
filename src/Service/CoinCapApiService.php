@@ -11,7 +11,7 @@ class CoinCapApiService
     private const API_URL = 'https://api.coincap.io/v2/assets/';
 
     public function __construct(
-        private readonly HttpClientInterface $httpClient
+        private readonly HttpClientInterface $httpClient,
     ) {
     }
 
